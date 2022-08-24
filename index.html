@@ -18,16 +18,19 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- start of main-wrapper -->
     <div class="main-wrapper">
       <div class="app">
         <p class="alert"></p>
         <!-- app header -->
         <div class="app-header">
           <h2 class="app-header-title">Super<span>Hero.</span></h2>
-          <a href="./favourites.html" class="fav">favourite</a>
+          <!-- <a href="./favourites.html" class="fav">favourite</a> -->
+          <button class="show-modal">favourite</button>
           <!-- <div class="fav-btn"><button><i class="fa-regular fa-heart"></i>favourite</button>
                     </div> -->
 
+          <!-- input form for search bar -->
           <form class="app-header-search">
             <input
               type="text"
@@ -40,7 +43,7 @@
             </button>
             <div class="search-list" id="search-list">
               <!-- <div class = "search-list-item">
-                            <img src = "images/thumbnail-batman.jpg" alt = "image not found">
+                            <img src = "images/thumbnail-batman.jpg" alt = "">
                             <p>Batman</p>
                         </div> -->
             </div>
@@ -52,7 +55,7 @@
           <div class="app-body-content">
             <!-- app body thumbnail -->
             <div class="app-body-content-thumbnail">
-              <img src="./assets/batman.jpg" alt="image not found" />
+              <img src="./assets/batman.jpg" />
             </div>
             <!-- end of app body thumbnail -->
 
@@ -212,9 +215,15 @@
             </div>
           </div>
         </div>
+
+        <div class="modal hidden">
+          <button class="modal-btn close-modal">&times;</button>
+        </div>
+        <div class="overlay hidden"></div>
       </div>
     </div>
     <script src="app.js"></script>
-    <script src="fav.js"></script>
+    <!-- <script src="fav.js"></script> -->
   </body>
 </html>
+
