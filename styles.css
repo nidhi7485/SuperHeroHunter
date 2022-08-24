@@ -19,6 +19,7 @@
 html {
   font-size: 10px;
 }
+/* style on body */
 body {
   font-size: 1.7rem;
   min-height: 100vh;
@@ -37,6 +38,8 @@ body {
   -ms-flex-pack: stretch;
   justify-content: stretch;
 }
+
+/* style on input button */
 button,
 input {
   font-family: inherit;
@@ -45,18 +48,24 @@ input {
   border: none;
   background-color: transparent;
 }
+/* style on list */
 li {
   list-style-type: none;
 }
+/* style on image */
 img {
   width: 100%;
   display: block;
 }
+
+/* styel on main-wrapper class */
 .main-wrapper {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
+
+/* style on app */
 .app {
   background-color: var(--dark-color);
   margin: 2rem;
@@ -66,6 +75,8 @@ img {
   -webkit-box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.5);
 }
+
+/* style on app header */
 .app-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,6 +88,8 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
+/* style on app header title */
 .app-header-title span {
   color: var(--red-color);
 }
@@ -140,6 +153,7 @@ img {
 /* favourite button */
 .name-btn {
   display: flex;
+  justify-content: space-between;
 }
 
 .fav-btn {
@@ -148,6 +162,7 @@ img {
   border: 1px solid var(--white-color);
   border-radius: 20px;
 }
+
 .fav-btn button {
   float: right;
   margin-right: 30px;
@@ -158,9 +173,7 @@ img {
   color: var(--white-color);
   padding: 10px;
 }
-/* .fav-btn button:hover{
-  background-color: chocolate;
-} */
+
 /* app body */
 .app-body {
   margin-top: 4rem;
@@ -188,7 +201,7 @@ img {
 
 /* alert end */
 
-/* favourite link */
+/* favourite */
 
 .fav {
   color: var(--red-color);
@@ -384,6 +397,77 @@ img {
   line-height: 1.9;
 }
 
+/* fav button */
+.show-modal {
+  margin: 2rem;
+  padding: 0.4rem;
+  font-size: 2rem;
+  background-color: #fff;
+  font-weight: bold;
+}
+/* modal styling */
+.hidden {
+  display: none;
+}
+
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+
+/* show modal */
+.close-modal {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  margin: 0.5rem;
+  padding: 0.4rem;
+  font-size: 1.5rem;
+}
+/* show modal */
+.show-modal {
+  background-color: red;
+  color: #fff;
+  border-radius: 1.5rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* styling for delete favourite */
+.del-fav {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.2rem;
+  margin-left: 1rem;
+  border-radius: 1.2rem;
+  margin-right: 1rem;
+  background-color: red;
+  font-weight: bolder;
+  padding: 0.5rem;
+}
+
+
+/* media query */
 @media screen and (max-width: 1200px) {
   .app-body-content {
     grid-template-columns: 1fr 3fr;
