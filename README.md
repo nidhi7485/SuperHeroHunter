@@ -3,7 +3,7 @@
 
 # Deployed Link:
 
-<h3>https://sperherohunter.netlify.app/](https://nidhi7485.github.io/SuperHeroHunter/</h3> 
+<h3>https://nidhi7485.github.io/SuperHeroHunter/</h3> 
 
 # Technology We Used :computer: 
 1. HTML5
